@@ -1,0 +1,21 @@
+header {
+  padding: .5em;
+  height: 400px;
+  width: 100%;
+  background-image: url("/images/ProfileBackground-520x260.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header div h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: white;
+  font-weight: normal;
+}
+
+header div h2 span {
+  font-weight: bold;
+}
