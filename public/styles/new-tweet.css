@@ -56,6 +56,11 @@
   padding: .75rem 1.5rem;
 }
 
+/* the class the counter is assigned when counter on the form < 0 */
+.negative {
+  color: red;
+}
+
 .counter {
   font-size: 32px;
 }
