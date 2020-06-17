@@ -1,0 +1,61 @@
+.new-tweet {
+  background-color: #f4f1ec;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1em 1.5em;
+}
+
+.new-tweet h2 {
+  text-align: center;
+}
+
+.new-tweet form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.new-tweet form div {
+  display: flex;
+  justify-content: space-between;
+  font-family: Bungee, sans-serif;
+}
+
+.new-tweet form label {
+  font-weight: bold;
+}
+
+.new-tweet form textarea {
+  margin: 20px 0;
+  border: 5px solid gray;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: #f4f1ec;
+}
+/* gets rid of text box outline in chrome */
+.new-tweet form textarea:active, .new-tweet form textarea:focus, .new-tweet form textarea:hover, .new-tweet form textarea:visited {
+  outline: none;
+  }
+
+.new-tweet form textarea:focus {
+  /* border: none !important; 
+  box-shadow: none; */
+  border: 5px solid gray;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  background-color: #f4f1ec;
+  }
+
+.new-tweet form button {
+  border: none;
+  color: white;
+  background-color: #4056A1;
+  padding: .75rem 1.5rem;
+}
+
+.counter {
+  font-size: 32px;
+}
