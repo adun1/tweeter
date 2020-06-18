@@ -1,0 +1,71 @@
+#tweet-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* background-color: red; */
+  /* border: 5px solid salmon; */
+  width: 90%;
+  margin: 25px;
+}
+
+.tweet {
+  width: 90%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  /* background-color: yellow; */
+  border: 5px solid black;
+}
+
+/* put hide in classe that you wanted hidden if you want to hide handle
+  .hide */
+.tweet:hover {
+  box-shadow: .5em .5em lightgray;
+}
+
+.tweet header {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: green; */
+  padding: 1em;
+}
+
+.tweet header .hd-lhs {
+  display: flex;
+}
+
+.tweet header .hd-lhs img {
+  height: 75px;
+  width: 75px;
+}
+
+.tweet header .hd-lhs h3 {
+  margin-left: .25em;
+}
+
+.tweet header .hd-rhs {
+  visibility: hidden;
+}
+
+.tweet:hover header .hd-rhs {
+  visibility: visible;
+}
+
+.tweet main {
+  padding: 1em;
+}
+
+.tweet-dividor{
+  /* styleize hr tag */
+  background-color: black;
+  margin: .5em;
+  border: none;
+  height: 5px;
+}
+
+.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  /* background-color:blue; */
+  padding: 0 1em 1em 1em;
+}

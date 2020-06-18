@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
+    
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,7 +39,7 @@
     </nav>
 
     <!-- Page-specific (main) content here -->
-    <header>
+    <header class='main-header'>
       <div>
         <img src="/images/profile-hex.png"> 
       </div>
@@ -61,12 +63,24 @@
       <section id="tweet-container">
         <article class="tweet">
           <header>
-            <img scr="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Kittyply_edit1.jpg/220px-Kittyply_edit1.jpg">
-            <br />
-            <h3>Adun</h3>
+            <div class="hd-lhs">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Kittyply_edit1.jpg/220px-Kittyply_edit1.jpg" />
+              <h3>Adun</h3>
+            </div>
+            <div class="hd-rhs">
+              <h3>Handle</h3>
+            </div>
           </header>
           <main>Here is a sample tweet</main>
-          <footer>10 days ago</footer>
+          <hr class="tweet-dividor" />
+          <footer>
+            <div class="ft-lhs">
+              10 days ago
+            </div>
+            <div class="ft-rhs">
+              btn1 btn2 btn3
+            </div>
+          </footer>
         </article>
       </section>
     </main>
