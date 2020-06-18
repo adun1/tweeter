@@ -30,6 +30,21 @@ $(document).ready(() => {
       "created_at": 1461113959088
     }
   ];
+
+  $('.new-tweet form').on('submit', function(event) {
+    event.preventDefault();
+    //use this.serialize to get all the values at once
+    const data = $(this).serialize();
+    $.post('/tweets', data)
+    .then(function(data1) {
+      //debugging (if successful do something)
+      console.log("data1: ", data1);
+    });
+
+  ;
+  });
+
+
   
   const renderTweets = function(tweets) {
     for(const tweet of tweets) {
