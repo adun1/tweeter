@@ -11,7 +11,7 @@ $(document).ready(() => {
     let counterObj = $(this).parent().children().find('.counter');
 
     if(lenRem < 0) {
-      counterObj.addClass("negative")
+      counterObj.addClass("negative");
     } else {
       counterObj.removeClass("negative");
     }
