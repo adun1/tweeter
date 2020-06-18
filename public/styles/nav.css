@@ -6,6 +6,10 @@ nav {
   display: flex;
   justify-content:space-between;
   padding: 1em;
+  /* fixed nav */
+  position: fixed;
+  top: 0;
+  overflow: hidden;
 }
 
 nav .name {
