@@ -10,10 +10,19 @@ $(document).ready(() => {
     event.preventDefault();
     //use this.serialize to get all the values at once
     const data = $(this).serialize();
-    $.post('/tweets', data)
-      .then(function(data1) {
-      loadTweets();
-    });
+    
+    //before posting the tweet ensure that its within the character parameters
+    let currLen = $('#tweet-text').val().length;
+    if(currLen <= 0) {
+      alert("Please enter some content");
+    } else if (currLen > 140) {
+      alert(`You are ${currLen - 140} characters over`);
+    } else {
+      $.post('/tweets', data)
+        .then(function(data1) {
+        loadTweets();
+      });
+    }
   });
 
   //hard coded get method location for now (can change later)
