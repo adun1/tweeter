@@ -53,7 +53,7 @@ $(document).ready(() => {
             <h3>${data.user.handle}</h3>
           </div>
         </header>
-        <main>${data.content.text}</main>
+        <main>${escape(data.content.text)}</main>
         <hr class="tweet-dividor" />
         <footer>
           <div class="ft-lhs">
@@ -65,6 +65,14 @@ $(document).ready(() => {
       </footer>
     </article>`);
   }
+
+  //from Method 2 use escape function notes, (escaping text given by user in main)
+  const escape =  function(str) {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  }
+
   loadTweets();
  
 });
